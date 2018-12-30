@@ -33,8 +33,8 @@ passport.use('local', new LocalStrategy(
 ));
 
 passport.use(new GitHubStrategy({
-    clientID: 'a3dea49b5a5f0911c3c5',
-    clientSecret: 'eab7f253af208fad6cc927651acb4fcbcf8a460c',
+    clientID: 'clientID',
+    clientSecret: 'clientSecret',
     callbackURL: 'http://localhost:3030/users/github/callback'
 },
     async (accessToken, refreshToken, profile, cb) => {
